@@ -10,8 +10,10 @@
 
 ## Install Project 
 Run Command
-1. composer install.
-2. npm install.
-3. set database in mysql with name like : laravelReactAssignment.
-4. run php artisan migrate --seed.
-5. try with register route
+1. git clone https://github.com/pawanmanka/laravelReactAssignment.git.
+2. cd laravelReactAssignment.
+3. composer install.
+4. npm install.
+5. set database in mysql with name like : laravelReactAssignment.
+6. run php artisan migrate --seed.
+7. Now serve the applicaiont php artisan serve.

@@ -18,7 +18,7 @@ export default function Login() {
         setSubmitting(true);  
         axios.post(APP_URL+'/api/auth/login',values)
         .then(res => {
-            setSubmitting(false);
+         ;
             resetForm();
             sessionStorage.setItem("_token", res.data.data.token);
             dispatch(token());
@@ -29,6 +29,7 @@ export default function Login() {
                 class:"bg-success",
                 theme: "dark"
               });
+            setSubmitting(false)
             navigate('/dashboard/users');
         
         }).catch(error => {
